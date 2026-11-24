@@ -1,0 +1,248 @@
+* {
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #e4e7ec;
+}
+
+#fo-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url("kepek/csoport.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -250px;
+  height: 300px;
+}
+
+header h1 {
+  color: #1e242b;
+  margin: 20px 15px;
+}
+
+h2 {
+  color: #1e242b;
+}
+
+nav {
+  text-align: center;
+  color: #ffffff;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background: rgba(20, 20, 20, 0.5);
+  padding: 20px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main > * {
+  background: #f6f7f9;
+}
+
+main > * img {
+  height: 200px;
+  object-fit: cover;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+aside #box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.galeria {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#box div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 200px;
+}
+
+#box div p {
+  margin: 2px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.info-boxok {
+  margin: 10px;
+}
+
+aside > * {
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+aside #foka-1 {
+  background-image: url("kiemelt/f1.jpg");
+  background-size: cover;
+}
+
+aside #foka-2 {
+  background-image: url("kiemelt/f2.jpg");
+  background-size: cover;
+}
+
+aside #foka-3 {
+  background-image: url("kiemelt/f3.jpg");
+  background-size: cover;
+}
+
+aside #foka-4 {
+  background-image: url("kiemelt/f4.jpg");
+  background-size: cover;
+}
+
+aside #foka-5 {
+  background-image: url("kiemelt/f5.jpg");
+  background-size: cover;
+}
+
+aside #foka-6 {
+  background-image: url("kiemelt/f6.png");
+  background-size: cover;
+}
+
+article #info-box-tartalom {
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  display: grid;
+  background: #3b4654;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer ul > ul {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  color: #dfdfdf;
+}
+
+#cim {
+  margin: 20px 15px;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 5px;
+  }
+
+  nav ul {
+    gap: 15px;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  article #info-box-tartalom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  aside > * {
+    height: 100%;
+  }
+
+  #box div {
+    height: 100px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria {
+    grid-template-columns: none;
+  }
+
+  .galeria img {
+    width: 100%;
+  }
+
+  aside #foka-1 {
+    background-position: -10px;
+  }
+
+  aside #foka-3 {
+    background-position: -10px;
+  }
+  aside #foka-5 {
+    background-position: -20px;
+  }
+
+  #box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header {
+    height: 200px;
+    background-position: center;
+
+    font-size: 11px;
+  }
+
+  footer ul {
+    padding: 0;
+  }
+
+  footer img {
+    width: 100px;
+  }
+}
